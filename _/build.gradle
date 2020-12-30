@@ -1,0 +1,26 @@
+subprojects {
+    group 'com.packt'
+    version = '1.0.0-SNAPSHOT'
+    
+    apply plugin: 'maven'
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    
+    repositories {
+        mavenCentral()
+    }
+    sourceSets {
+        main {
+            java { srcDir 'core/src/main/java' }
+            resources { srcDir 'core/src/main/resources' }
+        }
+        test {
+            java {srcDir 'core/src/test/java'}
+            resources { srcDir 'core/src/test/resources' }
+        }
+    }
+}
+
+
+task wrapper(type: Wrapper) { gradleVersion = '3.4-rc-2' }

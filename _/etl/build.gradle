@@ -1,0 +1,6 @@
+dependencies {
+    compile('org.datavec:datavec-spark_2.11:0.7.2',
+            'org.datavec:datavec-api:0.7.2',
+            'org.nd4j:nd4j-native-platform:0.7.2')
+    testCompile 'junit:junit:4.+'
+}

@@ -1,0 +1,4 @@
+include ':etl',':deeplearning'
+rootProject.name = 'packt-dl'
+
+
